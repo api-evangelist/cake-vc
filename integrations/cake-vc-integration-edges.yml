@@ -1,0 +1,18 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/cake-vc/integrations
+- https://zapier.com/apps/cake/integrations
+- https://n8n.io/integrations/cake-vc/
+- https://composio.dev/toolkits/cake-vc
+- https://monid.ai/tools/cake-vc
+checked:
+- https://composio.dev/toolkits/cake-vc
+- https://monid.ai/tools/cake-vc
+- https://n8n.io/integrations/cake-vc/
+- https://zapier.com/apps/cake-vc/integrations
+- https://zapier.com/apps/cake/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

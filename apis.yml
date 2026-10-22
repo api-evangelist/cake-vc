@@ -1,25 +1,72 @@
 aid: cake-vc
+
 name: Cake
-description: 'Cake is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by foundry-group) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/62e8522d2d8e36238f0dcb71/630398b5a6d44924b187d537_og_image.jpg
+
+description: 'Cake Ventures is a venture capital firm investing in early‑stage startups focused on emerging technologies and future internet trends. Backed by Foundry Group, they support founders across sectors such as aging, longevity, women’s spending power, and diverse demographics. Their mission is to fund visionary companies shaping tomorrow’s digital landscape, providing seed and pre‑seed capital, mentorship, and a network of builders.'
+
 url: https://raw.githubusercontent.com/api-evangelist/cake-vc/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- VentureCapital
+- EarlyStage
+- Demographics
+- Technology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- foundry-group
+
 common:
+- type: Hosts
+  url: hosts/cake-vc-hosts.yml
+- type: Vendors
+  url: vendors/cake-vc-vendors.yml
+- type: DomainSecurity
+  url: security/cake-vc-domain-security.yml
 - type: Website
   url: https://www.cake.vc
+- type: Blog
+  url: https://www.cake.vc/insights
+- type: PrivacyPolicy
+  url: https://www.cake.vc/privacy
+
+apis: []
+
+x-backed-by:
+- foundry-group
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-22'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.cake.vc
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
